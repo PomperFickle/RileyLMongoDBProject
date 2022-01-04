@@ -1,0 +1,12 @@
+html(lang="en")
+    head
+        link(rel="stylesheet",href ="/headers.css")
+        meta(charset="UTF-8")
+        link(rel="shortcut icon", href="favicon.ico")
+        title Restaurant
+    body 
+        include ./../partials/navheader.pug
+    h1 #{restaurant.name}
+    p1 Delivery Fee: #{restaurant.delivery_fee}
+    br
+    p1 Minimum Order: $#{restaurant.min_order}

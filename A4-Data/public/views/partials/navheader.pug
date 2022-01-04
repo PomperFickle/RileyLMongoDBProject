@@ -1,0 +1,13 @@
+html
+    h1 
+        if loggedIn
+            a(rel = "stylesheet",id="home-header", href = "/", class = "headers", type ="text/html") Home Page | 
+            a(rel = "stylesheet",id="userspage-header", href = "/users", class="headers", type="text/html") Users Page|   
+            a(rel = "stylesheet",id="orderform-header", href = "/order", class="headers", type="text/html") Order Form|   
+            a(rel = "stylesheet",id="userprofile-header", href = "/users/" + id,class="headers", type="text/html") User Profile|
+            a(rel = "stylesheet",id="logout-header", href = "/logout",class="headers", type="text/html") Log Out 
+        else 
+            a(rel = "stylesheet",id="home-header", href = "/", class = "headers", type ="text/html") Home Page | 
+            a(rel = "stylesheet",id="userspage-header", href = "/users", class="headers", type="text/html") Users Page|   
+            a(rel = "stylesheet",id="regis-header", href = "/registration",class="headers", type="text/html") Registration|
+            a(rel = "stylesheet",id="login-header", href = "/login",class="headers", type="text/html") Log In|

@@ -1,0 +1,16 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="shortcut icon", href="favicon.ico")
+        title User Profile
+    body 
+        include ./../partials/navheader.pug
+        h2 Placed by #{userinfo.username}
+        p Restaurant:#{data.restaurantName}
+        each item in data.order 
+            p1 #{item.quantity}:#{item.name}
+        p Subtotal: $#{data.subtotal}
+        p Tax: $#{data.tax}
+        p Delivery Fee: $#{delfee}
+        p Total:$#{data.total}
+    script(src='/userp.js')

@@ -1,0 +1,14 @@
+html(lang="en")
+    head
+        link(rel="stylesheet",href ="/headers.css")
+        meta(charset="UTF-8")
+        link(rel="shortcut icon", href="favicon.ico")
+        title Restaurants
+    body 
+        include ./../partials/navheader.pug
+        h2 Restaurants:
+        u1
+        each rest in restaurants
+            li
+                a(href="/restaurants/" + rest.id) #{rest.name}
+

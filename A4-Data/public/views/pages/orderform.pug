@@ -1,0 +1,14 @@
+html
+	head
+		title Order Form
+		link(rel="stylesheet",href ="/styles.css")
+	body(onload="init()")
+		include ./../partials/navheader.pug
+		select(id="restaurant-select")
+		br
+		div(id="info")
+		div(id="main")
+			div(class="column left" id="left")
+			div(class="column middle" id="middle")
+			div(class="column right" id="right")
+		script(src="orderform.js")

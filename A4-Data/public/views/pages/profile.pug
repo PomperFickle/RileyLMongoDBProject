@@ -1,0 +1,17 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="shortcut icon", href="favicon.ico")
+        title User Profile
+    body 
+        include ./../partials/navheader.pug
+        p1
+            p1 User:#{userdata.username}
+            h2  Order History: 
+            br
+            each order in orderdata
+                a(href="/orders/" + order._id) #{order._id}
+                br
+        if myOwnProfile
+            input(type="button", name="privButton", id="privButton", value="Private:" + userdata.privacy, onclick="changePrivacy()")
+    script(src='/userp.js')

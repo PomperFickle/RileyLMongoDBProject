@@ -1,0 +1,17 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="shortcut icon", href="favicon.ico")
+        title Login
+    body 
+        include ./../partials/navheader.pug
+        h1#header Log in here:
+        br
+        h2 Username:
+        input(type="text", name="username" id="username")
+        h2 Password: 
+        br
+        input(type="text", name="password", id="password")
+        br
+        input(type="button", name="register", id="register",value = "Log In",onclick="loginUser()")
+    script(src='/login.js')

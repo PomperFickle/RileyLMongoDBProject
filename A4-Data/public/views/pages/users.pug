@@ -1,0 +1,13 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="shortcut icon", href="favicon.ico")
+        title Users
+    body 
+        include ./../partials/navheader.pug
+        h1#header Users:
+        br
+        each user in users
+            a(href="/users/" + user._id)   #{user.username}
+            br
+    script(src='/users.js')
